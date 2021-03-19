@@ -30,7 +30,7 @@ status = True
 def battery_status():
 	return status
 	
-def rangeValidation(bmsParam_value,bmsParam_name,Lang,high_value,lower_value):
+def rangeValidation(bmsParam_value,bmsParam_name,Lang):
 	bottom_level= battery_allowedValues[bmsParam_name]['min']
 	high_level = battery_allowedValues[bmsParam_name]['max']
 	threshold = lower_limit(high_level)
@@ -49,13 +49,13 @@ def battery_Limit_Check(bmsParam_name,bmsParam_value,Lang):
         print(Display_Message['high_breach'][Lang]+bmsParam_name)
         status=False
     else:
-        rangeValidation(bmsParam_value,bmsParam_name,Lang,high_value,lower_value) 
+        rangeValidation(bmsParam_value,bmsParam_name,Lang) 
 			
 def fahrenheit_to_celsius(bmsParam_name,bmsParam_value):
     if (Temp_unit == 'F'):
         Celsius_Value = (bmsParam_value-32)*(5/9)
     else:
-        Celsius_Value = bms_param_value
+        Celsius_Value = bmsParam_value
     return Celsius_Value
                    
 def battery_is_ok(temperature,state_of_charge,charge_rate,Lang):
