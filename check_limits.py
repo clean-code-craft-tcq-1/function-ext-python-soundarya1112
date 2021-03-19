@@ -26,7 +26,7 @@ def lower_limit(value):
 	
 Valuee = 1	
 def battery_status():
-	if(valuee==1)
+	if(valuee == 1):
 		status=True
 	else 
 		status=False
@@ -38,9 +38,9 @@ def rangeValidation(bmsParam_value,bmsParam_name,Lang,high,minimum):
 	threshold = lower_limit(maximum)
 	lower_value = minimum+threshold
 	high_value =  maximum-threshold
-	if (bmsParam_value < lower_value)
+	if (bmsParam_value < lower_value):
 		 print(Display_Message  ['warning_L'][lang]+bmsParam_name)
-	if (bmsParam_value > high_value)
+	if (bmsParam_value > high_value):
 		 print(Display_Message  ['warning_H'][lang]+bmsParam_name)
 
 	
@@ -51,7 +51,7 @@ def battery_validationcheck(battery_inputs,Value):
         return outOfIndex_Values
 
 def battery_Limit_Check(bmsParam_name,bmsParam_value,outOfIndex_Values,Lang): 
-        if (bmsParam_value < battery_allowedValues[bmsParam_name]['min']) 
+        if (bmsParam_value < battery_allowedValues[bmsParam_name]['min']):
 			print(Display_Message  ['low_breach'][Lang]+bmsParam_name)
 			status=True
 	elif(bmsParam_value > battery_allowedValues[bmsParam_name]['max']):
