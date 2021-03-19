@@ -25,7 +25,7 @@ def lower_limit(value):
 	return (value * allowed_limit) / 100
 	
 Valuee = 1	
-def battery_status()
+def battery_status():
 	if(valuee==1)
 		status=True
 	else 
