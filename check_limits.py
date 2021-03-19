@@ -28,7 +28,7 @@ Valuee = 1
 def battery_status():
 	if(valuee == 1):
 		status=True
-	else 
+	else :
 		status=False
 	return status
 	
