@@ -59,9 +59,9 @@ def fahrenheit_to_celsius(bmsParam_name,bmsParam_value):
     return Celsius_Value
                    
 def battery_is_ok(temperature,state_of_charge,charge_rate,Lang):
-    battery_Limit_Check(temperature,'temperature',Lang)
-    battery_Limit_Check(state_of_charge,'state_of_charge',Lang)
-    battery_Limit_Check(charge_rate,'charge_rate',Lang)
+    battery_Limit_Check('temperature',temperature,Lang)
+    battery_Limit_Check('state_of_charge',state_of_charge,Lang)
+    battery_Limit_Check('charge_rate',charge_rate,Lang)
     return battery_status()
 
 if __name__ == '__main__':
