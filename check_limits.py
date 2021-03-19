@@ -21,7 +21,7 @@ Temp_unit = {
 Lang = "EN"    
                   
 def lower_limit(value):
-allowed_limit = 5
+	allowed_limit = 5
 	return (value * allowed_limit) / 100
 	
 Valuee = 1	
