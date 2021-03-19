@@ -33,6 +33,10 @@ We will explore the charging phase of Li-ion batteries to start with.
 1. Avoid duplication - functions that do nearly the same thing
 1. Complete the tests - cover all conditions.
 1. To treat, we need to know the abnormal vital and the breach -
+
+Extensions:
+1.  Accept input in different units - Covered tempearture checks in celscius and Fahrenheit
+2.  Support a language in addition to English - Added German 
 whether high or low. Add this capability.
 1. Add the ability to plug-in different reporters to this code.
 
