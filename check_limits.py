@@ -1,4 +1,5 @@
-battery_allowedValues = {'temperature' : {'min': 0, 'max': 45},'state_of_charge' : {'min': 20, 'max': 80},'charge_rate' : {'min': 0,'max': 0.8}}
+battery_allowedValues = {'temperature' : {'min': 0, 'max': 45},'state_of_charge' : {'min': 20, 'max': 80},
+			 'charge_rate' : {'min': 0,'max': 0.8}}
 
 Display_Message       = {
 				'low_breach':   { 'DE' : 'Untergrenze überschritten für ', 
@@ -8,8 +9,7 @@ Display_Message       = {
                                 'high_breach' : { 'DE' : 'Obergrenze überschritten für '  , 
                                                   'EN' : 'Higher Limit Breached for ' }   ,
                                 'warning_H'   : { 'DE' : 'Höhere Schwelle nähert sich ', 
-                                                  'EN' : 'Higher Threshold Nearing ' } 
-				 } 
+                                                  'EN' : 'Higher Threshold Nearing ' } } 
 
 Temp_unit            = {
                           'C': 'Celsius',
