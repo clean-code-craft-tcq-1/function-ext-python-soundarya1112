@@ -30,12 +30,12 @@ status = True
 def battery_status():
 	return status
 	
-def rangeValidation(bmsParam_value,bmsParam_name,Lang,high,maximum,minimum):
+def rangeValidation(bmsParam_value,bmsParam_name,Lang,maximum,minimum):
 	bottom_level= battery_allowedValues[bmsParam_name]['min']
 	high_level = battery_allowedValues[bmsParam_name]['max']
 	threshold = lower_limit(maximum)
-	lower_value = minimum+threshold
-	high_value =  maximum-threshold
+	lower_value = bottom_level+threshold
+	high_value =  high_level-threshold
 	if (bmsParam_value < lower_value):
 	   print(Display_Message['warning_L'][Lang]+bmsParam_name)
 	if (bmsParam_value > high_value):
