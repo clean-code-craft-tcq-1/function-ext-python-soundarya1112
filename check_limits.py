@@ -33,7 +33,7 @@ def battery_status():
 def rangeValidation(bmsParam_value,bmsParam_name,Lang,high_value,lower_value):
 	bottom_level= battery_allowedValues[bmsParam_name]['min']
 	high_level = battery_allowedValues[bmsParam_name]['max']
-	threshold = lower_limit(maximum)
+	threshold = lower_limit(high_level)
 	lower_value = bottom_level+threshold
 	high_value =  high_level-threshold
 	if (bmsParam_value < lower_value):
