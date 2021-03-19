@@ -37,9 +37,9 @@ def rangeValidation(bmsParam_value,bmsParam_name,Lang,high,maximum,minimum):
 	lower_value = minimum+threshold
 	high_value =  maximum-threshold
 	if (bmsParam_value < lower_value):
-	   print(Display_Message['warning_L'][lang]+bmsParam_name)
+	   print(Display_Message['warning_L'][Lang]+bmsParam_name)
 	if (bmsParam_value > high_value):
-	   print(Display_Message['warning_H'][lang]+bmsParam_name)
+	   print(Display_Message['warning_H'][Lang]+bmsParam_name)
 
 def battery_Limit_Check(bmsParam_name,bmsParam_value,Lang):
     if (bmsParam_value < battery_allowedValues[bmsParam_name]['min']):
@@ -49,7 +49,7 @@ def battery_Limit_Check(bmsParam_name,bmsParam_value,Lang):
         print(Display_Message['high_breach'][Lang]+bmsParam_name)
         status=False
     else:
-        Check_range(bmsParam_value,bmsParam_name,Lang,maximum,minimum) 
+        rangeValidation(bmsParam_value,bmsParam_name,Lang,high,maximum,minimum) 
 			
 def fahrenheit_to_celsius(bmsParam_name,bmsParam_value):
     if (Temp_unit == 'F'):
