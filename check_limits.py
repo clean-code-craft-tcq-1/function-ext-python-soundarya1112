@@ -65,11 +65,11 @@ def battery_is_ok(temperature,state_of_charge,charge_rate,Lang):
     return battery_status()
 
 if __name__ == '__main__':
-    assert(battery_is_ok(15,65,0.6,'EN')is True) 
-    assert(battery_is_ok(70,90,0.9,'EN')is False)  
-    assert(battery_is_ok(46,10,0.9,'EN')is False)
-    assert(battery_is_ok(15,65,0.6,'DE')is True) 
-    assert(battery_is_ok(70,90,0.9,'DE')is False)  
-    assert(battery_is_ok(46,10,0.9,'DE')is False)
+    assert(battery_is_ok(15,65,0.6,'EN') == True) 
+    assert(battery_is_ok(70,90,0.9,'EN') == False)  
+    assert(battery_is_ok(46,10,0.9,'EN') == False)
+    assert(battery_is_ok(15,65,0.6,'DE') == True) 
+    assert(battery_is_ok(70,90,0.9,'DE') == False)  
+    assert(battery_is_ok(46,10,0.9,'DE') == False)
 
     
