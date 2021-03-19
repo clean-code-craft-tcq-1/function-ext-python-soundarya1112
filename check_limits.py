@@ -1,9 +1,9 @@
 battery_allowedValues = {
-        'temperature'      : {'min': 0, 'max': 45},
-        'state_of_charge'  : {'min': 20, 'max': 80},
-        'charge_rate'      : {'min': 0,'max': 0.8}
+        			'temperature'      : {'min': 0, 'max': 45},
+       				'state_of_charge'  : {'min': 20, 'max': 80},
+        			'charge_rate'      : {'min': 0,'max': 0.8}
                      }
-Display_Message               = {
+Display_Message       = {
 				'low_breach':   { 'DE' : 'Untergrenze überschritten für ', 
                                                   'EN' : 'Lower Limit Breached for ' }   ,
                                 'warning_L' : 	{ 'DE' : 'Unterer Schwellenwert nähert sich '  ,   
@@ -13,10 +13,11 @@ Display_Message               = {
                                 'warning_H'	: 	{ 'DE' : 'Höhere Schwelle nähert sich ', 
                                                   'EN' : 'Higher Threshold Nearing ' } 
 				 } 
-Temp_unit = {
+
+Temp_unit            = {
                           'C': 'Celsius',
                           'F': 'Fahrenheit'
-            }
+                       }
 			
 Lang = "EN"    
                   
